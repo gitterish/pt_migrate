@@ -1,0 +1,30 @@
+#The t_session cookie value when logged into PT site. Required only when downloading attachments
+PT_SESSION=<cookie value>
+
+#The OT URL e.g. http://abc.ontimenow.com. Required if using the --post option
+OT_URL=<OnTime hostname>
+
+#The OT API access token. Required if using the --post option
+OT_ACCESS_TOKEN=<OnTime API access token>
+
+# Project Id mapping based on values in PT label. Required to provide a DEFAULT value.
+PROJECT_MAP={"ec2":"20", "ee":"21", "DEFAULT":"16"}
+
+# Severity mapping based on values in PT label. Optional.
+SEVERITY_MAP={"s0":"Critical", "s1":"High Impact", "s2":"Medium Impact", "s3":"Low Impact"}
+
+# Priority mapping based on values in PT label. Optional.
+PRIORITY_MAP={"0":"1", "1":"3", "2":"2", "3":"2"}
+
+# Workflow step mapping based on current state. Required to provide a DEFAULT value.
+STATE_MAP={"accepted":"11", "DEFAULT":"7"}
+
+# Type mapping based on story type. Optional.
+TYPE_MAP={"feature":"FEATURE", "bug":"BUG", "release":"FEATURE", "chore":"FEATURE"}
+
+#Custom field to store the story type in. Optional.
+TYPE_CUSTOM_FIELD=custom_164
+
+# Set to yes if do not want to migrate PT accepted tasks. Default is no.
+SKIP_ACCEPTED=yes
+
