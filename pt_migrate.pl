@@ -396,12 +396,13 @@ if (defined $error)
 {
 	print $error . "\n";
 	print <<USAGE;
-Usage: $0 --cfgfile=<cfg file> --storyfile=<story file> --mapfile=<map file> --post
+Usage: $0 --cfgfile=<cfg file> --storyfile=<story file> --mapfile=<map file> --post --verbose
 Options
 --cfgfile: The config file with options to control migration. Mandatory.
 --storyfile: The file containing PT story XML. Mandatory.
 --mapfile: The file that will store mapping of PT and OT Ids. Optional.
 --post: If set, will carry out the upload of the migrated story to OT. IF not set, will only print the input JSON to upload the OT story; will not actually affect the OT system.
+--verbose: Enables debug logging
 USAGE
 	exit;
 }
