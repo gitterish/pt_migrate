@@ -1,3 +1,8 @@
+#####################################################################################
+# pt_migrate.pl: Script to migrate PivotalTracker tasks to OntimeNow
+# Run perl pt_migrate.pl for options
+#
+#####################################################################################
 use XML::Simple;
 use Data::Dumper;
 use JSON;
@@ -7,7 +12,6 @@ use HTTP::Request::Common;
 use URI::Encode;
 
 my $OPTIONS = {};
-my $WORKFLOW_STEP_NEW = 7;
 my $WORKFLOW_STEP_COMPLETED = 11;
 
 sub debug
